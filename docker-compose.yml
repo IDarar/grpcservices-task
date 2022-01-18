@@ -1,0 +1,31 @@
+version : "3.8"
+
+services:
+  s1:
+    build: 
+      context: .
+      dockerfile: ./s1/Dockerfile
+    networks:
+      - app
+    container_name: s1
+    depends_on:
+     - s2
+    ports:
+      - 7001:7001
+    volumes:
+      - ./config1.json:/app/config.json  
+  s2:
+    build: 
+      context: .
+      dockerfile: ./s2/Dockerfile
+
+    networks:
+      - app
+    container_name: s2
+    ports:
+      - 7002:7002
+    volumes:
+      - ./config2.json:/app/config.json  
+
+networks: 
+  app:     

@@ -1,0 +1,9 @@
+{
+    "grpc": {
+        "port":"7002"
+    },
+    "google_search":{
+        "api_key":"AIzaSyCIEpQPVEXDqFFj_DsQJCy1G--suIwRSQU",
+        "cx":"fd8e18b4c2a87c82e"
+    }
+}
