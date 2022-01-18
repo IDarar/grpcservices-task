@@ -8,3 +8,4 @@
 HTTP метод поиска: GET /search 
 В query указывается keyword. Например http://localhost:7001/search?keyword=123
 
+Адресс развернутого сервиса: https://subjless.space/grpctask/search?keyword=Go
